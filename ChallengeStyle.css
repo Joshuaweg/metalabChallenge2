@@ -98,7 +98,7 @@ h1 div+div{
 h1 div+div p{
 	background-color: #4d4d4d;
 	position: absolute;
-	height50px;
+	height: 50px;
 	width: 50px;
 	left: 75px;
 	top:75px;
