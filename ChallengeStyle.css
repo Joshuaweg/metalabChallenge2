@@ -1,0 +1,363 @@
+
+/*	Joshua Weg
+	September 8th 2016
+	Metalab challenge
+	This css file provides the mark up styles to generate the Challenge image. The colors for each
+	portion are decided with element selectors, mostly descending element selectors.*/
+
+/*I used the universal selector to remove any borders or margins that might result in any browser*/
+*{
+	margin: 0px;
+	border: 0px;
+}
+/*I standardized all the elements I was going to use by defining some of the box model parameters.*/
+div, p,span, section h1, h2, h3, h4{
+    display:block;
+    border: 0px ;
+    padding: 0px;
+    margin: 0px;
+}
+/*I defined h1, h2, and h3 to have the same number of pixels. They will serve as my sections of
+the image.*/
+h1, h3, h4{
+	height:200px;
+	width:1000px;
+}
+/*I defined h2 to have only 100,000 pixels, and defined a purple background color.*/
+h2 {
+	height:100px;
+	width:1000px;
+	background-color:#9900cc; /*purple*/
+}
+/*I defined the Background colors of the other headings */
+h1{
+	background-color:#6699ff /*light blue*/
+}
+h3{
+	background-color: #4d4d4d;/*dark grey*/
+}
+h4{
+	background-color: orange;
+}
+h1 p{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 50px;
+	top:75px;
+}
+h1 p+p{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:50px;
+	width:100px;
+	left: 150px;
+	top:75px;
+}
+h1 p+span{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 300px;
+	top:75px;
+}
+h1 div{
+background-color: yellow;
+	position: absolute;
+	height:200px;
+	width:200px;
+	left: 400px;
+	top:0px;	
+}
+h1 div p{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 0px;
+	top:0px;
+}
+h1 div p+p{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 150px;
+	top:150px;
+}
+h1 div+div{
+	background-color: #e6e6e6;
+	position: absolute;
+	height:200px;
+	width:200px;
+	left: 600px;
+	top:0px;
+}
+h1 div+div p{
+	background-color: #4d4d4d;
+	position: absolute;
+	height50px;
+	width: 50px;
+	left: 75px;
+	top:75px;
+}
+h1 span{
+	background-color: red;
+	position: absolute;
+	height:200px;
+	width:200px;
+	left: 800px;
+	top:0px;
+}
+h1 span div{
+	background-color: #00ffcc;
+	position: absolute;
+	height:100px;
+	width:100px;
+	left: 100px;
+	top:0px;
+}
+h1 span div+div{
+	background-color: #4d4d4d;
+	position: absolute;
+	height:100px;
+	width:100px;
+	left: 100px;
+	top:100px;
+}
+h2 div{
+	background-color: orange;
+	position: absolute;
+	height:100px;
+	width:400px;
+	left: 0px;
+	top:200px;
+}
+
+
+h2 div+div{
+	background-color: yellow;
+	position: absolute;
+	height:50px;
+	width:200px;
+	left: 0px;
+	top:200px;
+}
+h2 div+div p{
+	background-color: red;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 0px;
+	top:0px;
+}
+h2 div+div p+p{
+	background-color: red;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 100px;
+	top:0px;
+}
+h2 span {
+	background-color: #cc00ff;
+	position: absolute;
+	height:50px;
+	width:400px;
+	left: 200px;
+	top:200px;
+}
+h2 span+span {
+	background-color: green;
+	position: absolute;
+	height:50px;
+	width:200px;
+	left: 400px;
+	top:250px;
+}
+h3 div{
+	background-color: red;
+	position: absolute;
+	height:200px;
+	width:300px;
+	left: 200px;
+	top:300px;
+}
+h3 div p{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 0px;
+	top: 0px;
+}
+h3 div+div{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:100px;
+	left: 300px;
+	top: 450px;
+}
+h3 div+div span{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:350px;
+	left: 150px;
+	top: -150px;
+}
+h3 div+div span p{
+	background-color: lime;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 50px;
+	top: 0px;
+}
+h3 div+div span p+p{
+	background-color: lime;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 150px;
+	top: 0px;
+}
+h3 div+div span p+p~p{
+	background-color: lime;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 250px;
+	top: 0px;
+}
+h3 span{
+	background-color: #e6e6e6;
+	position: absolute;
+	height:150px;
+	width:300px;
+	left: 500px;
+	top: 350px;
+}
+h3 span div{
+	background-color: green;
+	position: absolute;
+	height:50px;
+	width:300px;
+	left: 0px;
+	top: 50px;
+}
+h4 div{
+	background-color: yellow;
+	position: absolute;
+	height:100px;
+	width:100px;
+	left: 0px;
+	top: 500px;
+}
+h4 div div{
+	background-color: #e6e6e6;
+	position: absolute;
+	height:100px;
+	width:100px;
+	left: 100px;
+	top: 100px;
+}
+h4 div+div{
+	background-color: red;
+	position: absolute;
+	height:200px;
+	width:300px;
+	left: 200px;
+	top:500px;
+}
+h4 div+div p{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 0px;
+	top:150px;
+}
+h4 div+div div{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:100px;
+	left: 100px;
+	top:00px;
+}
+h4 div+div p~p{
+	background-color: white;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 250px;
+	top:150px;
+}
+h4 div+span{
+	background-color: #00ffcc;
+	position: absolute;
+	height:200px;
+	width:300px;
+	left: 500px;
+	top:500px;
+}
+h4 span{
+	background-color: #e6e6e6;
+	position: absolute;
+	height:200px;
+	width:200px;
+	left: 800px;
+	top: 500px;
+}
+h2 section{
+	background-color: orange;
+	position: absolute;
+	height:100px;
+	width:400px;
+	left: 600px;
+	top:700px;	
+}
+h2 section>section{
+	background-color: yellow;
+	position: absolute;
+	height:50px;
+	width:200px;
+	left: 200px;
+	top: 0px;
+}
+h2 section p{
+	background-color: red;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 50px;
+	top: 0px;
+}
+h2 section p+p{
+	background-color: red;
+	position: absolute;
+	height:50px;
+	width:50px;
+	left: 150px;
+	top: 0px;
+}
+h2 section+section{
+	background-color: green;
+	position: absolute;
+	height:50px;
+	width:200px;
+	left: 400px;
+	top: 750px;
+}
+h2 section+div{
+	background-color: #cc00ff;
+	position: absolute;
+	height:50px;
+	width:400px;
+	left: 400px;
+	top: 700px;
+}
