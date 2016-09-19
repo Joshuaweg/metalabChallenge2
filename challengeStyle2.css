@@ -1,1 +1,35 @@
-
+/*Joshua Weg
+  Metalab Challenge
+  September 19 2016*/
+  
+  body{
+    height: 800px;
+    width: 1000px;
+  }
+  div{
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+    float: right;
+  }
+  div#wrapper{
+    margin: 0 auto;
+  }
+  div.bigSkyBlue{
+    height: 200px;
+    width:400px;
+    background-color:#0066ff;
+  }
+  div.tinyGrey{
+    padding: 50px;
+    height: 50px;
+    width 50px;
+    background-color: #e6e6e6;
+  }
+  div.tinyGrey div{
+    height: 50px;
+    width: 100px;
+    background-color: #e6e6e6;
+    right: 50px;
+  }
+  
